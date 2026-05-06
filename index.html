@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Document</title>
@@ -12,21 +12,34 @@
     <!-- nav -->
     <div class="nav">
         <div class="logo">
-            <h2>Logo</h2>
-        </div>
+    <!-- Tambahkan SVG di sini -->
+    <svg width="60" height="30" margin-left="12" viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg" style="margin-right: 10px;">
+        <defs>
+            <linearGradient id="grad-infinity" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#89CFF0;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <path d="M165,125 C165,70 235,70 250,125 C265,180 335,180 335,125 C335,70 265,70 250,125 C235,180 165,180 165,125 Z" 
+              fill="none" 
+              stroke="url(#grad-infinity)" 
+              stroke-width="40" 
+              stroke-linecap="round" />
+    </svg>
+</div>
         <ul class="data-list">
             <a href="#"><li>Home</li></a>
-            <a href="#"><li class="wisata">Wisata <i class="fa-solid fa-chevron-down"></i>
-
+            <li class="wisata">Wisata <i class="fa-solid fa-chevron-down"></i>
                 <ul class="list">
-                    <a href="#"><li>Batu nuak</li></a>
-                    <a href="#"><li>Batu jato</li></a>
-                    <a href="#"><li>Air terjun Sirin punti </li></a>
-                </ul>
-            </li></a>
-            <a href="#"><li>Tentang kami</li></a>
-            <a href="#"><li>Sumber informasi</li></a>
+            <a href="batu-nuak.html"><li>Batu nuak</li></a>
+            <a href="batu-jato.html"><li>Batu jato</li></a>
+            <a href="sirin-punti.html"><li>Air terjun Sirin punti</li></a>
         </ul>
+    </li>
+
+    <a href="tentang.html"><li>Tentang kami</li></a>
+    <a href="informasi.html"><li>Sumber informasi</li></a>
+</ul>
     </div>
 
     <!-- nav selesai -->
@@ -48,7 +61,7 @@
     <!-- card -->
 <div class="bg-card">
 
-<a href="#">
+<a href="batu-jato.html" id="batu-jato">
 
     <div class="card">
         <div class="gambar-card">
@@ -58,12 +71,13 @@
             <h2>Batu jato</h2>
             <p>Lokasi: Desa Pantok, Kecamatan Nanga Taman, Kabupaten Sekadau, Kalimantan Barat.</p>
         </div>
+        <a href="batu-jato.html" class="btn-detail">Baca Selengkapnya</a>
     </div>
 
 </a>
 
 
-<a href="#">
+<a href="batu-nuak.html" id="batu-nuak">
 
     <div class="card">
         <div class="gambar-card">
@@ -73,12 +87,13 @@
             <h2>Batu nuak</h2>
             <p>Lokasi: Dusun Nuak, Desa Rirang Jati, Kecamatan Nanga Taman, Kabupaten Sekadau, Kalimantan Barat.</p>
         </div>
+        <a href="batu-nuak.html" class="btn-detail">Baca Selengkapnya</a>
     </div>
 
 </a>
 
 
-<a href="#">
+<a href="sirin-punti.html" id="sirin-punti">
 
     <div class="card">
         <div class="gambar-card">
@@ -88,6 +103,7 @@
             <h2>Air terjun Sirin punti</h2>
             <p>Lokasi: RT Sangke, Dusun Kelampuk, Desa Meragun, Kecamatan Nanga Taman, Kabupaten Sekadau, Kalimantan Barat.</p>
         </div>
+        <a href="sirin-punti.html" class="btn-detail">Baca Selengkapnya</a>
     </div>
 
 </a>
@@ -105,5 +121,6 @@
 
 
     <!-- footer selesai -->
+
 </body>
 </html>
